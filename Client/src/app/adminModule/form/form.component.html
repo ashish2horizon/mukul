@@ -1,0 +1,157 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <h4 > Add Book</h4>
+
+        <div style="color:red"><b>{{refresh}}</b></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" >
+            <form  (ngSubmit)="onSubmit()" #data='ngForm'>
+              <div id="user-data">
+                  <div class='form-group' >
+                  </div> 
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="id">Book ID</label>
+                                <input
+                                  [(ngModel)] = "book.id"
+                                  type="text" id="id" class="form-control"  
+                                  name="id" 
+                                  required
+                                />
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="title">Title </label>
+                              <input
+                                  [(ngModel)] = "book.title"
+                                  type="text" id="title" class="form-control"  
+                                  name="title" 
+                                  required
+                                />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="Author">Author </label>
+                              <input
+                                  [(ngModel)] = "book.author"
+                                  type="text" id="author" class="form-control" 
+                                  name="author" 
+                                  required   
+                              >
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="name">Image </label>
+                              <input
+                                  [(ngModel)] = "book.image"
+                                  type="text" id="image" class="form-control" name="image" 
+                                  required
+                              >
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="name">Total Pages </label>
+                              <input
+                                  [(ngModel)] = "book.pageCount"
+                                  type="number" id="pageCount" class="form-control" name="page" 
+                                  required
+                              >
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="name">Total Quantity </label>
+                                  <input
+                                    [(ngModel)] = "book.quantity"
+                                    type="number" id="avgrating" class="form-control" name="quantity" 
+                                    required
+                                  >
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="name">Averate Rate </label>
+                              
+                            <select
+                                type="number" id="rating" class="form-control" name="rating" 
+                                required
+                                ngModel 
+                            >
+                              <option value="" style="color:red"><b>Select</b></option>
+                              <option value=1>1</option>
+                              <option value=2>2</option>
+                              <option value=3>3</option>
+                              <option value=4>4</option>
+                              <option value=5>5</option>
+                              
+                          </select>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class='form-group'>
+                              <label for="name">Total Rater </label>
+                              <input
+                                  [(ngModel)] = "book.totalRater"
+                                  type="number" id="avgrating" class="form-control" name="rater" 
+                                  required
+                              >
+                              </div>
+                      </div>
+                  </div>
+                  <div class='form-group'>
+                      <label for="category">Category </label>
+                      <select
+                          id="category" class="form-control"  name="category"
+                          ngModel 
+                          required
+                      >
+                          <option value="" style="color:red"><b>Select Please</b></option>
+                          <option value="1">Fiction</option>
+                          <option value="2">Action</option>
+                          <option value="3">Horror</option>
+                          <option value="4">Comics</option>
+                          <option value="5">Romance</option>
+                          <option value="6">Adventure</option>
+                          <option value="7">Textbook</option>
+                          <option value="8">Biography</option>
+                          <option value="9">Others</option>
+                      </select>
+                  </div>
+                  <span style="color:red"><b>{{alert}}</b></span>
+                  <div class='form-group'>
+                      <label for="name">Description </label>
+                      <textarea
+                          [(ngModel)] = "book.description"
+                          rows="4"
+                          id="description" class="form-control" name="description" 
+                          required
+                      ></textarea>
+                  </div>     
+              </div>
+          
+            <button class="btn btn-primary"
+            type="submit" 
+            id="submit"
+            [disabled]="!data.valid"
+            ngForm="searchAll = null"
+            >Submit</button>
+            </form>
+        </div>
+        <p style="color: brown"> <b>  {{successMessage}} </b></p>  
+    </div>
+</div>

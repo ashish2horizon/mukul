@@ -1,0 +1,54 @@
+.mat-toolbar.mat-primary {
+    background: rgb(61, 204, 197);
+    color: white;
+    font-weight:bold;
+    
+  }
+  .example-icon {
+    padding: 0 2vw;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+
+button {
+    font-weight:bold;
+    margin-left: 1vw;
+    
+}
+.container-fluid{
+    padding:0%;
+    width: 100%;
+    
+    overflow-x: hidden;
+}
+.sidebar{
+    background: rgb(101, 230, 230);
+    padding: 0.6vw;
+    width: 100%;
+    height: 77.2vw;
+    margin-top: 4px;
+    border-right: 0.3VW;
+    border-right-color: black
+}
+.sidebarrouter{
+    margin:1vw;
+    padding: 0%
+}
+// .sidebarrouter:hover {
+//     background-color: #D9E3D2;
+// }
+@media screen and (max-width: 575px) {
+    .sidebar{
+        background: #1D3FAA;
+        padding: 0.6vw;
+        width: 100%;
+        height: 31vw;
+        margin-bottom: 5%;
+        border-right: 0.3VW;
+        border-right-color: black
+    }
+  }

@@ -1,0 +1,96 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding-right: 4vw;
+    margin-top: 4vw;
+    text-overflow: ellipsis;
+    
+}
+input{
+    width: 32vw;
+    height: 4vw;
+    border-radius:0.5vw;
+    margin: 1vw;
+    padding: 0.5vw
+}
+
+b{
+  margin-right : 70px;
+}
+
+#id1{
+   margin-left:3vw;
+   margin-top:2vw;
+}
+#id2{
+    margin-left:10vw;
+    margin-top:2px;
+    margin-bottom:12px;
+    width: 15vw;
+    height: 4vw;
+}
+
+
+// Google Identity and Google+ Sign in buttons
+// https://developers.google.com/+/branding-guidelines
+
+.google-button {
+    height: 40px;
+    border-width: 0;
+    background: rgb(39, 168, 136);
+    color: #737373;
+    border-radius: 5px;
+    white-space: nowrap;
+    color: white;
+    
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+    transition-property: background-color, box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    padding: 0;
+    
+    &:focus,
+    &:hover {
+      box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    
+    &:active {
+      background-color: #29BD11;
+      box-shadow: none;
+      transition-duration: 10ms;
+    }
+  }
+      
+  .google-button__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 0 8px 8px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+  }
+  
+  .google-button__icon--plus {
+    width: 27px;
+  }
+  
+  .google-button__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto',arial,sans-serif;
+  }
+  
+  // Boilerplate stuff
+  
+
+  
+ 
+  
+  button ~ button {
+    margin-left: 20px;
+  }

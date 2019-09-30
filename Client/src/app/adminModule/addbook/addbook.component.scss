@@ -1,0 +1,42 @@
+#input{
+    margin-left: 7vw;
+    width: 32vw;
+    border-radius: 0.5vw;
+    margin-top:2vw;
+    margin-left: 27vw
+}
+#inputButton{
+    margin-top: 2vw
+}
+.line {
+    border-bottom: 3px solid lightblue;
+    margin-top:1vw;
+    margin-left: 0vw;
+    padding: 0
+}
+#card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height:7vw;
+    margin: 2vw;
+    border-radius: 1vw;
+    overflow: auto;
+    padding: 1vw;
+    
+    #button{
+        margin-top:1vw;
+        height: 3vw;
+        width: 10vw;
+    }
+    
+}
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+@media only screen and (max-width: 600px){
+    #card {
+        background-color:red
+    }
+}
+
+ 

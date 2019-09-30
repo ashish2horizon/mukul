@@ -1,0 +1,30 @@
+<div class="container" style="margin:3vw">
+    <div class="row">
+      <div class="col-sm-12" ></div>
+        
+         <p style="text-align: center ; color:brown"><b>User Details </b></p>   
+           <hr/>
+      </div>
+
+        <div *ngFor="let item of  cart; let i = index;">
+          <div class="row">
+              <div class="col-sm-5" style="margin:2vw">
+                  <div class="card">
+                    <p style="margin-left:2vw"> <b>{{i + 1}}</b></p>   <mat-card class="example-card">
+                            UserID : <b>{{item.email}}</b>
+                        </mat-card>
+                        <hr/>
+                        <mat-card class="example-card">
+                            Issued Book : <b>{{item.title}}</b>
+                        </mat-card>
+                        <mat-card class="example-card">
+                            Book Author : <b>{{item.author}}</b>
+                        </mat-card>
+                       
+                  </div>
+                </div>
+                
+          </div>
+        
+      </div>
+    </div> 

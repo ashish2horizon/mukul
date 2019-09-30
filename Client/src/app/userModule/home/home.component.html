@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+      <span (click)="home()" onmouseover="" style="cursor: pointer;" id="home">Book Store</span>
+
+      <input type ='text' #searchbox/>
+      <button mat-button (click)="search(searchbox.value)" id="search"><mat-icon>search</mat-icon></button>
+      <span class="example-spacer"></span>
+      
+      <button mat-button (click)="profile()"><mat-icon>account_circle</mat-icon> {{name | slice:0:7}}</button>
+      <button mat-button (click)="cart()" ><mat-icon>add_shopping_cart</mat-icon>
+          <sup ><b class = "cartNumber">
+          {{itemInCart}} </b></sup></button>
+      <button mat-button (click)="logout()">Logout</button>
+  </mat-toolbar-row>
+  </mat-toolbar>
+<router-outlet></router-outlet>
+
+

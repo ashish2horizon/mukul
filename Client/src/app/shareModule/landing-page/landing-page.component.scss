@@ -1,0 +1,82 @@
+
+.row{
+  background-color: rgb(115, 209, 221);
+}
+.login{
+  border: 0.2vw solid #00B2FF;
+  padding: 1vw;
+  border-radius: 30% ;
+  cursor: pointer;
+  margin-left: 30vw;
+  color:#00BCFF;
+  font-weight:bold;
+  margin-top:30vw
+}
+#id1{
+  margin-left: 31vw;
+  margin-top: 12vw;
+  margin-right: 32vw;
+}
+.signupButton{
+  white-space: pre-line;
+  text-align: center;
+  margin-top:3vw;
+  height:3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  border-radius: 15vw;
+  width: 32vw;
+  cursor: pointer;
+  font-weight: bold;
+  background: white;
+  border: 1px solid #00BCFF
+}
+
+.loginButton{
+  white-space: pre-line;
+  text-align: center;
+  margin-top:3vw;
+  height:3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  border-radius: 15vw;
+  width: 32vw;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #00BCFF;
+  background: rgb(0, 255, 242);
+  
+}
+.button1:hover {
+  opacity: 1;
+  background-color: #1548C9;
+  color: white;
+}
+
+.button2:hover {
+  opacity: 1;
+  background-color: #C0C5D3;
+  color: white;
+}
+
+.login:hover {
+  opacity: 1;
+  background-color: #C0C5D3;
+  color: white;
+}
+#idleft{
+  background-Color: rgb(134, 222, 233);
+  text-overflow:ellipsis;
+  height : 47.5vw;
+  padding-top:17vw;
+  padding-left:1vw;
+  text-align: center
+}
+.x{
+  margin-left:1vw;
+  margin-top:2vw
+}
+#idright{
+  padding:2vw;
+  height : 47.5vw;
+}

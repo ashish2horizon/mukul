@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <mat-toolbar  color="primary">
+                <mat-toolbar-row>
+                    <span (click)="home()" style="margin-left:2vw">Book Library</span>
+                    
+                    <span class="example-spacer"></span>
+                        <mat-icon>account_circle</mat-icon> 
+                        <b>Admin</b>
+                    <button mat-button (click)="logout()" style="margin-right:2vw">
+                        Logout
+                    </button>
+                </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    
+    <div class="row">
+            <div class="col-sm-2">
+                <div class="sidebar">
+                    <div class="sidebarrouter">
+                        <a routerLink='/admin' ><h6 style="color: white">Dashboard</h6></a>
+                    </div >
+                    <div class="sidebarrouter">
+                        <a routerLink='/admin/allbooks' ><h6 style="color: white">My Store</h6></a>
+                    </div>
+                    <div class="sidebarrouter">
+                        <a routerLink='/admin/userDetails' ><h6 style="color: white">My Users</h6></a>
+                    </div>
+
+                    <div class="sidebarrouter">       
+                        <a routerLink='/admin/addbooks' ><h6 style="color: white">Add New Book</h6></a>
+                    </div>
+                
+                
+            </div>
+              
+            </div>
+            <div class="col-sm-10" >
+                    <app-child></app-child>
+                    <br/>
+            </div>
+    </div>
+    
+    <div class="row" >
+        <div class="col-sm-12">
+            <app-footer></app-footer>
+        </div>
+            
+     </div>  
+       
+</div>
+
+

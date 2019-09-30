@@ -1,0 +1,60 @@
+<mat-progress-bar mode="indeterminate" *ngIf="!flag1"></mat-progress-bar>
+
+
+    <div *ngIf="flag1">
+        <div class="container-fluid">
+            <div class="row">  
+              <div class="col-sm-12" *ngFor="let book of cartBook">
+                  <div class="col-sm-3">
+                      <div class="card" >
+                          <mat-card class="example-card">
+                            <img mat-card-image src={{book.image}} alt="Not Available">
+                          </mat-card>
+                      </div>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="card" >
+                          <h5>{{book.title }}</h5>
+                          <mat-card-subtitle>Author : {{book.author}}</mat-card-subtitle>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4">
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <div style="margin:50px" *ngIf="cartItem">
+                                  <button style="background-color:lightseagreen ;
+                                  cursor: pointer;margin-left:50px"
+                                  (click)="return(book.id)">Return
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="row">      
+                            <div class="col-sm-12">
+                                <div style="margin:50px" *ngIf="cartItem">
+                                    <button style="background-color:lightcoral ;
+                                    cursor: pointer;margin-left:50px"
+                                    (click)="renew()">Renew
+                                    </button>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>          
+              </div>
+            </div>
+        </div>
+            
+      
+     
+      <div style="margin:50px" *ngIf="cartItem">
+          <button style="background-color:OrangeRed ;
+          cursor: pointer;margin-left:50px"
+          (click)="home()">Go to Library
+          </button>
+  </div>
+  <div class="card" *ngIf="!cartItem" >
+      <h4>You haven't Issed any book</h4>
+    </div>    
+  </div>

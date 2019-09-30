@@ -1,0 +1,53 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+input{
+  
+  width: 40vw;
+  min-width: 7vw;
+  box-sizing: border-box;
+  margin-left: 6vw;
+  border-radius: 0.5vw
+    
+}
+.cartNumber{
+  
+  background: red;
+  border-radius: 0.8em;
+ -moz-border-radius: 0.8em;
+ -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.6em; 
+}
+
+#search{
+  height: 70%;
+  width: 3vw;
+  font-size: small
+}
+button{
+  margin: 0.5vw;
+  padding:0vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size-adjust:auto;
+}
+
+mat-toolbar{
+  width: 100%;
+  overflow-x: hidden;
+  font-size:2vw;
+  background-color: rgb(128, 236, 240);
+}
+

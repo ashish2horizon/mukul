@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form [formGroup]="bookAddForm" (ngSubmit)="onSubmit()">
+          <label for="title">Title</label>
+          <input
+            type = "text"
+            id="title"
+            formControlName="title"
+            class="form-control">
+            <span
+              *ngIf="!addBookForm.get('title').valid && addBookForm.get('title').touched"
+              class="help-block"> Please Enter valid username 
+            </span>
+
+            <label for="title">Email</label>
+            <input
+              type = "email"
+              id="email"
+              formControlName="email"
+              class="form-control">
+        </form>
+    </div>
+  </div>
+</div>
+

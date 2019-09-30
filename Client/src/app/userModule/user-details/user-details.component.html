@@ -1,0 +1,27 @@
+
+
+<div class="container" style="margin:3vw">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="card">
+          <mat-card class="example-card" style="text-align: center">
+              <b>My Details </b>
+            </mat-card>
+            <hr/>
+        <mat-card class="example-card">
+          Name : <b>{{userDetail.name}}</b>
+        </mat-card>
+        <mat-card class="example-card">
+          Email : <b>{{userDetail.email}}</b>
+        </mat-card>
+        <mat-card class="example-card">
+          Gender : <b>{{userDetail.gender}}</b>
+        </mat-card>
+        <mat-card class="example-card">
+          Created Date : <b>{{userDetail.creation_dt | slice:0:10}}</b>
+        </mat-card>
+      </div>
+     
+      
+</div>
+   

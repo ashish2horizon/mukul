@@ -1,0 +1,38 @@
+
+container-fluid{
+    width: 100%;
+    height: 20vw
+}
+.card {
+    max-width: 25vw;;
+    height: 14vw;
+    margin-left : 1vw;
+    margin-top : 1vw;
+    float:left;
+    border-color:antiquewhite;
+    border: 0.5vw
+}
+
+img{
+    width:20vw;
+    height:12vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    margin-top:1vw;
+}
+button {
+    /* background-color: #4CAF50; Green */
+    border: none;
+    color: white;
+    padding: 17px 68px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0.4vw
+   
+  }
+
+  mat-Card{
+      background-color: rgb(137, 211, 211);
+  }

@@ -1,0 +1,45 @@
+<mat-progress-bar mode="indeterminate" *ngIf="!flag1"></mat-progress-bar>
+<div *ngIf="flag1">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card">
+              <mat-card class="example-card">
+                <img mat-card-image src={{book.image}} alt="Photo of a Shiba Inu">
+              </mat-card>
+            <br />
+            <button *ngIf="!isIssued" style="background-color:rgb(43, 168, 226) ;
+                    cursor: pointer;margin-left:50px" (click)="addToCart()">Issue 
+            </button>
+            <button *ngIf="isIssued" style="background-color:yellowgreen ;
+                  cursor: pointer;margin-left:50px" (click)="return(book.id)">return  
+            </button>
+            <button *ngIf="isIssued" style="background-color:lightcoral ;
+                  cursor: pointer;margin-left:50px" (click)="renew()">renew 
+            </button>
+          </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="card">
+              <mat-card class="example-card">
+                <h5>{{book.title }}</h5>
+                <mat-card-subtitle>Author : {{book.author}}</mat-card-subtitle>
+                <span mat-icon-button color="accent">
+                      Rating :<mat-icon color="accent" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+                      </span><span><b style="margin-right:4px">{{book.avgRating  }}</b></span>
+                <br/>
+                <span sytle="margin-top:30px">Total Review : ({{book.totalReters}})</span>
+               
+                <br/>
+                <br/>
+                <p><b>Caterogy : </b> {{category}}</p>
+                <br/>
+                <br/>
+                <p><b>Description </b> : {{book.description }}
+                
+              </mat-card>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
